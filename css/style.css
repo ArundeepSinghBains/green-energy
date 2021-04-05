@@ -1,0 +1,145 @@
+a {
+    color: darkgreen;
+    text-decoration: none;
+}
+
+.block1 
+
+{
+
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "contentimage contenttext";
+}
+
+.block1 p 
+
+{
+    grid-area: contenttext;
+    font-size: 1.3rem;
+}
+
+.buttons 
+{
+    background-color: darkgreen;
+    color: yellow;
+    font-size: 20px;
+    font-family: monospace;
+    padding: 6px;
+    border: none;
+    border-radius: 18px;
+    margin: 10px;
+    margin-left: -8.5px;
+}
+
+.buttons#active-button 
+
+
+{
+    background-color: purple;
+}
+
+.masthead 
+
+{
+    background-image: url(../img/background);
+    background-size: cover;
+    width: 100%;
+}
+
+.block1 img 
+
+{
+    grid-area: contentimage;
+    height: 250px;
+    width: 300px;
+}
+
+.main 
+{
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+li
+
+{
+
+    display: inline-block;
+    list-style: none;
+
+}
+
+nav 
+
+{
+    padding: 1px;
+    border: solid;
+    border-bottom-style: groove;
+    border-color: darkgreen;
+
+}
+
+
+
+ul 
+
+{
+   
+    text-align: left;
+    margin-left: -38.5px;
+}
+
+nav ul li 
+
+{
+    font-size: 2em;
+    margin-left: 2%;
+}
+
+
+@media (max-width: 40rem) 
+
+{
+
+    nav ul li 
+    
+    {
+        display: block;
+        text-align: left;
+    }
+
+    .block1 
+    
+    {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "contentimage"
+            "contenttext";
+    }
+
+    .block1 img 
+    
+    {
+        width: 240px;
+        height: 200px;
+
+    }
+
+}
+
+footer 
+
+{
+    text-align: left;
+    color: black;
+    font-size: 22px;
+    padding-left: 50px;
+    border-bottom-style: groove;
+    border-color: darkgreen;
+}
